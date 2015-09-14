@@ -23,7 +23,7 @@ var map = L.mapbox.map('map', 'examples.map-i875kd35');
 
 $.ajax({
     //url: "https://www.openstreetmap.org/api/0.6/way/260501602/full",
-    url: "http://overpass-api.de/api/interpreter?data=%5Bout%3Axml%5D%5Btimeout%3A25%5D%3B%28way%5B%22amenity%22%3D%22school%22%5D%28-1%2E5701617059414184%2C36%2E50001525878906%2C-1%2E0553144713908544%2C37%2E02735900878906%29%3B%29%3Bout%20body%3B%3E%3Bout%20skel%20qt%3B%0A",
+    url: "http://onaio.github.io/turbo-osm-spike/300-450-yo.osm",
     dataType: "xml",
     success: function (xml) {
         var layer = new L.OSM.DataLayer(xml).addTo(map);
